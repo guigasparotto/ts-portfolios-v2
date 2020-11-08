@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { Methods } from "./Methods";
-import { MetadataKeys } from "./MetadataKeys";
+import { Methods } from "./enums/Methods";
+import { MetadataKeys } from "./enums/MetadataKeys";
 import { RequestHandler } from "express";
 
 /*  This interface extends PropertyDescriptor in order to define what it should receive, which in this case will be a request handler - so if a value exists, it must be this type. A request handler is a function with two parameters: request and response - (req: Request, res: Response) => {}
